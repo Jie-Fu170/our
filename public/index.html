@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我们的爱情故事</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <audio id="bgMusic" preload="metadata" loop>
+        <source src="/music/1.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放
+    </audio>
+    <div class="music-control">
+        <i class="fas fa-music"></i>
+    </div>
+    <div class="floating-words">
+        <span>永远爱你</span>
+        <span>一生一世</span>
+        <span>执子之手</span>
+        <span>与子偕老</span>
+    </div>
     <div class="container">
         <div class="heart"></div>
         <h1 class="title">亲爱的，纪念日快乐！</h1>
@@ -35,7 +49,24 @@
             <p>你的笑容是我生命中最美的风景，</p>
             <p>愿我们的爱情永远像初见时那般甜蜜。</p>
         </div>
+        <div class="anniversary-counter">
+            <h3>我们已经在一起</h3>
+            <div class="counter">
+                <div class="counter-item">
+                    <span id="years">0</span>
+                    <span>年</span>
+                </div>
+                <div class="counter-item">
+                    <span id="days">0</span>
+                    <span>天</span>
+                </div>
+                <div class="counter-item">
+                    <span id="hours">0</span>
+                    <span>小时</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html> 
